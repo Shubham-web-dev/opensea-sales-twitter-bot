@@ -39,8 +39,5 @@
     {
       "url": "heroku/nodejs"
     }
-  ],
-  "scripts": {
-    "postdeploy": "./postdeploy.sh"
-  }
+  ]
 }
