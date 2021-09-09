@@ -28,7 +28,7 @@ function formatAndSendTweet(event) {
 
 // Poll OpenSea every 60 seconds & retrieve all sales for a given collection in either the time since the last sale OR in the last minute
 setInterval(() => {
-    const lastSaleTime = moment().subtract(65, "seconds").unix();
+    const lastSaleTime = moment().subtract(process.env.REFRESH_AT + 10, "seconds").unix();
     axios.get('https://api.opensea.io/api/v1/events', {
         params: {
             collection_slug: process.env.OPENSEA_COLLECTION_SLUG,
@@ -51,4 +51,4 @@ setInterval(() => {
     }).catch((error) => {
         console.error(error);
     });
-}, 60000);
+}, process.env.REFRESH_AT);
