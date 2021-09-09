@@ -1,0 +1,46 @@
+{
+  "name": "OpenSea Twitter Sales Bot",
+  "description": "A JS script to hit the OpenSea API for collection sales and send tweets on Twitter",
+  "keywords": [
+    "ethereum",
+    "nft",
+    "twitter"
+  ],
+  "repository": "https://github.com/Shubham-web-dev/opensea-sales-twitter-bot",
+  "env": {
+    "CONSUMER_KEY": {
+      "description": "Twitter Consumer Key"
+      "required": true
+    },
+    "CONSUMER_SECRET": {
+      "description": "Twitter Consumer Key Secret"
+      "required": true
+    },
+    "ACCESS_TOKEN_KEY": {
+      "description": "Twitter Access Token Key",
+      "required": true
+    },
+    "ACCESS_TOKEN_SECRET": {
+      "description": "Twitter Acess Token Secret",
+      "required": false
+    },
+    "OPENSEA_COLLECTION_SLUG": {
+      "description": "OpenSea Collection Slug",
+      "required": false
+    },
+    "REFRESH_AT": {
+      "description": "Time in Microseconds to hit API",
+      "required": false
+    }
+  },
+  "image": "heroku/nodejs",
+  "formation": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "./postdeploy.sh"
+  }
+}
