@@ -54,3 +54,8 @@ As mentioned at the top of the README, it runs every 60 seconds by default - you
 This code is licensed under the [ISC License](https://choosealicense.com/licenses/isc/).
 
 Please include proper attribution to my original project if you fork or modify this project in any way. Thank you!
+
+
+The easiest way to run this script on a chron scheduler is to deploy it to Heroku with this button:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
