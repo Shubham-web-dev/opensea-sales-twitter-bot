@@ -37,8 +37,8 @@ setInterval(() => {
             only_opensea: 'false'
         }
     }).then((response) => {
-        console.log(response);
         const events = _.get(response, ['data', 'asset_events']);
+        console.log(events);
         const sortedEvents = _.sortBy(events, function(event) {
             var created = _.get(event, 'created_date');
             return new Date(created);
