@@ -9,11 +9,11 @@
   "repository": "https://github.com/Shubham-web-dev/opensea-sales-twitter-bot",
   "env": {
     "CONSUMER_KEY": {
-      "description": "Twitter Consumer Key"
+      "description": "Twitter Consumer Key",
       "required": true
     },
     "CONSUMER_SECRET": {
-      "description": "Twitter Consumer Key Secret"
+      "description": "Twitter Consumer Key Secret",
       "required": true
     },
     "ACCESS_TOKEN_KEY": {
